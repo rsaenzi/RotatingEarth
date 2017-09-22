@@ -1,0 +1,586 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B12F398A1F74ADC8003105BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B12F39891F74ADC8003105BE /* AppDelegate.swift */; };
+		B12F398C1F74ADC8003105BE /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B12F398B1F74ADC8003105BE /* GameViewController.swift */; };
+		B12F398F1F74ADC8003105BE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B12F398D1F74ADC8003105BE /* Main.storyboard */; };
+		B12F39921F74ADC8003105BE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B12F39901F74ADC8003105BE /* LaunchScreen.storyboard */; };
+		B12F39971F74ADC8003105BE /* RotatingEarth.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = B12F39961F74ADC8003105BE /* RotatingEarth.app */; };
+		B12F399D1F74ADC8003105BE /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B12F399B1F74ADC8003105BE /* Interface.storyboard */; };
+		B12F39A41F74ADC8003105BE /* RotatingEarth Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = B12F39A31F74ADC8003105BE /* RotatingEarth Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		B12F39A91F74ADC8003105BE /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B12F39A81F74ADC8003105BE /* InterfaceController.swift */; };
+		B12F39AB1F74ADC8003105BE /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B12F39AA1F74ADC8003105BE /* ExtensionDelegate.swift */; };
+		B12F39B21F74ADC8003105BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B12F39811F74ADC8003105BE /* Assets.xcassets */; };
+		B12F39B31F74ADC8003105BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B12F39811F74ADC8003105BE /* Assets.xcassets */; };
+		B12F39C21F74C0DC003105BE /* Earth.scn in Resources */ = {isa = PBXBuildFile; fileRef = B12F39C11F74C0DC003105BE /* Earth.scn */; };
+		B12F39C31F74D32C003105BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B12F39811F74ADC8003105BE /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B12F39981F74ADC8003105BE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B12F39791F74ADC8003105BE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B12F39951F74ADC8003105BE;
+			remoteInfo = "watchOS App";
+		};
+		B12F39A51F74ADC8003105BE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B12F39791F74ADC8003105BE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B12F39A21F74ADC8003105BE;
+			remoteInfo = "watchOS Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B12F39B91F74ADC8003105BE /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				B12F39A41F74ADC8003105BE /* RotatingEarth Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B12F39BD1F74ADC8003105BE /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				B12F39971F74ADC8003105BE /* RotatingEarth.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		B12F39811F74ADC8003105BE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B12F39861F74ADC8003105BE /* RotatingEarth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RotatingEarth.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B12F39891F74ADC8003105BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B12F398B1F74ADC8003105BE /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		B12F398E1F74ADC8003105BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B12F39911F74ADC8003105BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B12F39931F74ADC8003105BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B12F39961F74ADC8003105BE /* RotatingEarth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RotatingEarth.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B12F399C1F74ADC8003105BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		B12F399E1F74ADC8003105BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B12F39A31F74ADC8003105BE /* RotatingEarth Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "RotatingEarth Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B12F39A81F74ADC8003105BE /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		B12F39AA1F74ADC8003105BE /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		B12F39AC1F74ADC8003105BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B12F39C11F74C0DC003105BE /* Earth.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = Earth.scn; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B12F39831F74ADC8003105BE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B12F39A01F74ADC8003105BE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B12F39781F74ADC8003105BE = {
+			isa = PBXGroup;
+			children = (
+				B12F397D1F74ADC8003105BE /* Shared */,
+				B12F39881F74ADC8003105BE /* iOS */,
+				B12F399A1F74ADC8003105BE /* watchOS App */,
+				B12F39A71F74ADC8003105BE /* watchOS Extension */,
+				B12F39871F74ADC8003105BE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B12F397D1F74ADC8003105BE /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				B12F39811F74ADC8003105BE /* Assets.xcassets */,
+				B12F39C11F74C0DC003105BE /* Earth.scn */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		B12F39871F74ADC8003105BE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B12F39861F74ADC8003105BE /* RotatingEarth.app */,
+				B12F39961F74ADC8003105BE /* RotatingEarth.app */,
+				B12F39A31F74ADC8003105BE /* RotatingEarth Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B12F39881F74ADC8003105BE /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				B12F39891F74ADC8003105BE /* AppDelegate.swift */,
+				B12F398B1F74ADC8003105BE /* GameViewController.swift */,
+				B12F398D1F74ADC8003105BE /* Main.storyboard */,
+				B12F39901F74ADC8003105BE /* LaunchScreen.storyboard */,
+				B12F39931F74ADC8003105BE /* Info.plist */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
+		B12F399A1F74ADC8003105BE /* watchOS App */ = {
+			isa = PBXGroup;
+			children = (
+				B12F399B1F74ADC8003105BE /* Interface.storyboard */,
+				B12F399E1F74ADC8003105BE /* Info.plist */,
+			);
+			path = "watchOS App";
+			sourceTree = "<group>";
+		};
+		B12F39A71F74ADC8003105BE /* watchOS Extension */ = {
+			isa = PBXGroup;
+			children = (
+				B12F39A81F74ADC8003105BE /* InterfaceController.swift */,
+				B12F39AA1F74ADC8003105BE /* ExtensionDelegate.swift */,
+				B12F39AC1F74ADC8003105BE /* Info.plist */,
+			);
+			path = "watchOS Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B12F39851F74ADC8003105BE /* iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B12F39BE1F74ADC8003105BE /* Build configuration list for PBXNativeTarget "iOS" */;
+			buildPhases = (
+				B12F39821F74ADC8003105BE /* Sources */,
+				B12F39831F74ADC8003105BE /* Frameworks */,
+				B12F39841F74ADC8003105BE /* Resources */,
+				B12F39BD1F74ADC8003105BE /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B12F39991F74ADC8003105BE /* PBXTargetDependency */,
+			);
+			name = iOS;
+			productName = iOS;
+			productReference = B12F39861F74ADC8003105BE /* RotatingEarth.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B12F39951F74ADC8003105BE /* watchOS App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B12F39BA1F74ADC8003105BE /* Build configuration list for PBXNativeTarget "watchOS App" */;
+			buildPhases = (
+				B12F39941F74ADC8003105BE /* Resources */,
+				B12F39B91F74ADC8003105BE /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B12F39A61F74ADC8003105BE /* PBXTargetDependency */,
+			);
+			name = "watchOS App";
+			productName = "watchOS App";
+			productReference = B12F39961F74ADC8003105BE /* RotatingEarth.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		B12F39A21F74ADC8003105BE /* watchOS Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B12F39B61F74ADC8003105BE /* Build configuration list for PBXNativeTarget "watchOS Extension" */;
+			buildPhases = (
+				B12F399F1F74ADC8003105BE /* Sources */,
+				B12F39A01F74ADC8003105BE /* Frameworks */,
+				B12F39A11F74ADC8003105BE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "watchOS Extension";
+			productName = "watchOS Extension";
+			productReference = B12F39A31F74ADC8003105BE /* RotatingEarth Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B12F39791F74ADC8003105BE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Rigoberto Sáenz Imbacuán";
+				TargetAttributes = {
+					B12F39851F74ADC8003105BE = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 7F3F4K2U7H;
+						ProvisioningStyle = Automatic;
+					};
+					B12F39951F74ADC8003105BE = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 7F3F4K2U7H;
+						ProvisioningStyle = Automatic;
+					};
+					B12F39A21F74ADC8003105BE = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 7F3F4K2U7H;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = B12F397C1F74ADC8003105BE /* Build configuration list for PBXProject "RotatingEarth" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B12F39781F74ADC8003105BE;
+			productRefGroup = B12F39871F74ADC8003105BE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B12F39851F74ADC8003105BE /* iOS */,
+				B12F39951F74ADC8003105BE /* watchOS App */,
+				B12F39A21F74ADC8003105BE /* watchOS Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B12F39841F74ADC8003105BE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B12F398F1F74ADC8003105BE /* Main.storyboard in Resources */,
+				B12F39C21F74C0DC003105BE /* Earth.scn in Resources */,
+				B12F39921F74ADC8003105BE /* LaunchScreen.storyboard in Resources */,
+				B12F39B21F74ADC8003105BE /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B12F39941F74ADC8003105BE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B12F39B31F74ADC8003105BE /* Assets.xcassets in Resources */,
+				B12F399D1F74ADC8003105BE /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B12F39A11F74ADC8003105BE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B12F39C31F74D32C003105BE /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B12F39821F74ADC8003105BE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B12F398C1F74ADC8003105BE /* GameViewController.swift in Sources */,
+				B12F398A1F74ADC8003105BE /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B12F399F1F74ADC8003105BE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B12F39AB1F74ADC8003105BE /* ExtensionDelegate.swift in Sources */,
+				B12F39A91F74ADC8003105BE /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B12F39991F74ADC8003105BE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B12F39951F74ADC8003105BE /* watchOS App */;
+			targetProxy = B12F39981F74ADC8003105BE /* PBXContainerItemProxy */;
+		};
+		B12F39A61F74ADC8003105BE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B12F39A21F74ADC8003105BE /* watchOS Extension */;
+			targetProxy = B12F39A51F74ADC8003105BE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B12F398D1F74ADC8003105BE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B12F398E1F74ADC8003105BE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B12F39901F74ADC8003105BE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B12F39911F74ADC8003105BE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		B12F399B1F74ADC8003105BE /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B12F399C1F74ADC8003105BE /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B12F39B41F74ADC8003105BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B12F39B51F74ADC8003105BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+			};
+			name = Release;
+		};
+		B12F39B71F74ADC8003105BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 7F3F4K2U7H;
+				INFOPLIST_FILE = "watchOS Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tinycoolgames.RotatingEarth.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "RotatingEarth Extension";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				WATCHOS_DEPLOYMENT_TARGET = 3.2;
+			};
+			name = Debug;
+		};
+		B12F39B81F74ADC8003105BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 7F3F4K2U7H;
+				INFOPLIST_FILE = "watchOS Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tinycoolgames.RotatingEarth.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "RotatingEarth Extension";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 3.2;
+			};
+			name = Release;
+		};
+		B12F39BB1F74ADC8003105BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 7F3F4K2U7H;
+				IBSC_MODULE = RotatingEarth_Extension;
+				INFOPLIST_FILE = "watchOS App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tinycoolgames.RotatingEarth.watchkitapp;
+				PRODUCT_NAME = RotatingEarth;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				WATCHOS_DEPLOYMENT_TARGET = 3.2;
+			};
+			name = Debug;
+		};
+		B12F39BC1F74ADC8003105BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 7F3F4K2U7H;
+				IBSC_MODULE = RotatingEarth_Extension;
+				INFOPLIST_FILE = "watchOS App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tinycoolgames.RotatingEarth.watchkitapp;
+				PRODUCT_NAME = RotatingEarth;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 3.2;
+			};
+			name = Release;
+		};
+		B12F39BF1F74ADC8003105BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 7F3F4K2U7H;
+				INFOPLIST_FILE = iOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tinycoolgames.RotatingEarth;
+				PRODUCT_NAME = RotatingEarth;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B12F39C01F74ADC8003105BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 7F3F4K2U7H;
+				INFOPLIST_FILE = iOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tinycoolgames.RotatingEarth;
+				PRODUCT_NAME = RotatingEarth;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B12F397C1F74ADC8003105BE /* Build configuration list for PBXProject "RotatingEarth" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B12F39B41F74ADC8003105BE /* Debug */,
+				B12F39B51F74ADC8003105BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B12F39B61F74ADC8003105BE /* Build configuration list for PBXNativeTarget "watchOS Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B12F39B71F74ADC8003105BE /* Debug */,
+				B12F39B81F74ADC8003105BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		B12F39BA1F74ADC8003105BE /* Build configuration list for PBXNativeTarget "watchOS App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B12F39BB1F74ADC8003105BE /* Debug */,
+				B12F39BC1F74ADC8003105BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		B12F39BE1F74ADC8003105BE /* Build configuration list for PBXNativeTarget "iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B12F39BF1F74ADC8003105BE /* Debug */,
+				B12F39C01F74ADC8003105BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B12F39791F74ADC8003105BE /* Project object */;
+}
