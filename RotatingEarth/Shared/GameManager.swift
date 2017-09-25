@@ -20,15 +20,19 @@ class GameManager {
          return nil
       }
       
-      // Looks for node
-      guard let earthNode = scene.rootNode.childNode(withName: "planetEarth", recursively: false) else {
-         print("No 'planetEarth' node found")
-         return nil
-      }
+      // Looks for nodes
+      let earthNode = scene.rootNode.get(node: "planetEarth")
+      let sunNode = scene.rootNode.get(node: "sun")
       
-      // Set the Rotation
-      let rotation = SCNAction.rotate(by: 360 * CGFloat(Double.pi / 180.0), around: SCNVector3(x:0, y:1, z:0), duration: 15)
-      earthNode.runAction(SCNAction.repeatForever(rotation))
+      // Set the rotations
+      let rotationDegrees = 360 * CGFloat(Double.pi / 180.0)
+      let rotationAxis = SCNVector3(x:0, y:1, z:0)
+      
+      let earthRotation = SCNAction.rotate(by: rotationDegrees, around: rotationAxis, duration: 10)
+      earthNode.runAction(SCNAction.repeatForever(earthRotation))
+      
+      let sunRotation = SCNAction.rotate(by: rotationDegrees, around: rotationAxis, duration: 25)
+      sunNode.runAction(SCNAction.repeatForever(sunRotation))
       
       return scene
    }

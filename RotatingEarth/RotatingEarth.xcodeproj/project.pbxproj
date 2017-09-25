@@ -21,6 +21,8 @@
 		B1522EFF1F78C4EB00F352F9 /* Meshes.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = B1522EFE1F78C4EB00F352F9 /* Meshes.scnassets */; };
 		B1522F001F78C5DD00F352F9 /* Meshes.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = B1522EFE1F78C4EB00F352F9 /* Meshes.scnassets */; };
 		B1522F011F78C5DE00F352F9 /* Meshes.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = B1522EFE1F78C4EB00F352F9 /* Meshes.scnassets */; };
+		B1522F031F78D0AA00F352F9 /* SCNNode+Load.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1522F021F78D0AA00F352F9 /* SCNNode+Load.swift */; };
+		B1522F041F78D20B00F352F9 /* SCNNode+Load.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1522F021F78D0AA00F352F9 /* SCNNode+Load.swift */; };
 		B15DF0C01F789ABE0050FCB0 /* Game.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B15DF0BF1F789ABE0050FCB0 /* Game.storyboard */; };
 		B15DF0CF1F78A58D0050FCB0 /* GameManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B15DF0CE1F78A58D0050FCB0 /* GameManager.swift */; };
 		B15DF0D01F78A58D0050FCB0 /* GameManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B15DF0CE1F78A58D0050FCB0 /* GameManager.swift */; };
@@ -83,6 +85,7 @@
 		B12F39AA1F74ADC8003105BE /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
 		B12F39AC1F74ADC8003105BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B1522EFE1F78C4EB00F352F9 /* Meshes.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = Meshes.scnassets; sourceTree = "<group>"; };
+		B1522F021F78D0AA00F352F9 /* SCNNode+Load.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SCNNode+Load.swift"; sourceTree = "<group>"; };
 		B15DF0BF1F789ABE0050FCB0 /* Game.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Game.storyboard; sourceTree = "<group>"; };
 		B15DF0CE1F78A58D0050FCB0 /* GameManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -122,6 +125,7 @@
 				B12F39811F74ADC8003105BE /* Assets.xcassets */,
 				B1522EFE1F78C4EB00F352F9 /* Meshes.scnassets */,
 				B15DF0CE1F78A58D0050FCB0 /* GameManager.swift */,
+				B1522F021F78D0AA00F352F9 /* SCNNode+Load.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -310,6 +314,7 @@
 			files = (
 				B12F398C1F74ADC8003105BE /* GameViewController.swift in Sources */,
 				B15DF0CF1F78A58D0050FCB0 /* GameManager.swift in Sources */,
+				B1522F031F78D0AA00F352F9 /* SCNNode+Load.swift in Sources */,
 				B12F398A1F74ADC8003105BE /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -320,6 +325,7 @@
 			files = (
 				B12F39AB1F74ADC8003105BE /* ExtensionDelegate.swift in Sources */,
 				B15DF0D01F78A58D0050FCB0 /* GameManager.swift in Sources */,
+				B1522F041F78D20B00F352F9 /* SCNNode+Load.swift in Sources */,
 				B12F39A91F74ADC8003105BE /* GameInterfaceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
