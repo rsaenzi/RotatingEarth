@@ -15,7 +15,7 @@ class GameManager {
    static func getScene() -> SCNScene? {
       
       // Loads the scene
-      guard let scene = SCNScene(named: "art.scnassets/Earth.scn") else {
+      guard let scene = SCNScene(named: "Meshes.scnassets/Earth.scn") else {
          print("Scene 'Earth' can not be loaded")
          return nil
       }
