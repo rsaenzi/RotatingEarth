@@ -22,7 +22,7 @@ class GameInterfaceController: WKInterfaceController {
       sceneInterface.isPlaying = true
       
       // Set up the Scene
-      GameManager.config(scene: sceneInterface.scene)
+      sceneInterface.scene = GameManager.getScene()
     }
     
     override func willActivate() {

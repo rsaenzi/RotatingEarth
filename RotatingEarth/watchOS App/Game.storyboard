@@ -14,7 +14,7 @@
             <objects>
                 <controller id="zYS-eU-YzU" customClass="GameInterfaceController" customModule="RotatingEarth_Extension">
                     <items>
-                        <sceneKitScene alignment="left" playing="YES" scene="Earth.scn" id="Pg0-ow-rI0">
+                        <sceneKitScene alignment="left" playing="YES" id="Pg0-ow-rI0">
                             <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         </sceneKitScene>
                     </items>

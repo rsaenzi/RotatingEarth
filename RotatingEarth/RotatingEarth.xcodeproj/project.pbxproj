@@ -18,13 +18,10 @@
 		B12F39B21F74ADC8003105BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B12F39811F74ADC8003105BE /* Assets.xcassets */; };
 		B12F39B31F74ADC8003105BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B12F39811F74ADC8003105BE /* Assets.xcassets */; };
 		B12F39C31F74D32C003105BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B12F39811F74ADC8003105BE /* Assets.xcassets */; };
-		B15DF0BC1F7898380050FCB0 /* Scenes.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = B15DF0BB1F7898380050FCB0 /* Scenes.scnassets */; };
-		B15DF0BD1F78983D0050FCB0 /* Scenes.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = B15DF0BB1F7898380050FCB0 /* Scenes.scnassets */; };
-		B15DF0BE1F78983E0050FCB0 /* Scenes.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = B15DF0BB1F7898380050FCB0 /* Scenes.scnassets */; };
+		B1522EFF1F78C4EB00F352F9 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = B1522EFE1F78C4EB00F352F9 /* art.scnassets */; };
+		B1522F001F78C5DD00F352F9 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = B1522EFE1F78C4EB00F352F9 /* art.scnassets */; };
+		B1522F011F78C5DE00F352F9 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = B1522EFE1F78C4EB00F352F9 /* art.scnassets */; };
 		B15DF0C01F789ABE0050FCB0 /* Game.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B15DF0BF1F789ABE0050FCB0 /* Game.storyboard */; };
-		B15DF0CA1F789C490050FCB0 /* Earth.scn in Resources */ = {isa = PBXBuildFile; fileRef = B15DF0C91F789C490050FCB0 /* Earth.scn */; };
-		B15DF0CB1F789C490050FCB0 /* Earth.scn in Resources */ = {isa = PBXBuildFile; fileRef = B15DF0C91F789C490050FCB0 /* Earth.scn */; };
-		B15DF0CC1F789C490050FCB0 /* Earth.scn in Resources */ = {isa = PBXBuildFile; fileRef = B15DF0C91F789C490050FCB0 /* Earth.scn */; };
 		B15DF0CF1F78A58D0050FCB0 /* GameManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B15DF0CE1F78A58D0050FCB0 /* GameManager.swift */; };
 		B15DF0D01F78A58D0050FCB0 /* GameManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B15DF0CE1F78A58D0050FCB0 /* GameManager.swift */; };
 /* End PBXBuildFile section */
@@ -85,9 +82,8 @@
 		B12F39A81F74ADC8003105BE /* GameInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameInterfaceController.swift; sourceTree = "<group>"; };
 		B12F39AA1F74ADC8003105BE /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
 		B12F39AC1F74ADC8003105BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B15DF0BB1F7898380050FCB0 /* Scenes.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = Scenes.scnassets; sourceTree = "<group>"; };
+		B1522EFE1F78C4EB00F352F9 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
 		B15DF0BF1F789ABE0050FCB0 /* Game.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Game.storyboard; sourceTree = "<group>"; };
-		B15DF0C91F789C490050FCB0 /* Earth.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = Earth.scn; sourceTree = "<group>"; };
 		B15DF0CE1F78A58D0050FCB0 /* GameManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -123,10 +119,8 @@
 		B12F397D1F74ADC8003105BE /* Shared */ = {
 			isa = PBXGroup;
 			children = (
-				B15DF0CD1F78A3460050FCB0 /* Earth */,
 				B12F39811F74ADC8003105BE /* Assets.xcassets */,
-				B15DF0BB1F7898380050FCB0 /* Scenes.scnassets */,
-				B15DF0C91F789C490050FCB0 /* Earth.scn */,
+				B1522EFE1F78C4EB00F352F9 /* art.scnassets */,
 				B15DF0CE1F78A58D0050FCB0 /* GameManager.swift */,
 			);
 			path = Shared;
@@ -171,13 +165,6 @@
 				B12F39AC1F74ADC8003105BE /* Info.plist */,
 			);
 			path = "watchOS Extension";
-			sourceTree = "<group>";
-		};
-		B15DF0CD1F78A3460050FCB0 /* Earth */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Earth;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -289,10 +276,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				B12F398F1F74ADC8003105BE /* Main.storyboard in Resources */,
+				B1522EFF1F78C4EB00F352F9 /* art.scnassets in Resources */,
 				B12F39921F74ADC8003105BE /* LaunchScreen.storyboard in Resources */,
 				B12F39B21F74ADC8003105BE /* Assets.xcassets in Resources */,
-				B15DF0BE1F78983E0050FCB0 /* Scenes.scnassets in Resources */,
-				B15DF0CA1F789C490050FCB0 /* Earth.scn in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,9 +287,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				B15DF0C01F789ABE0050FCB0 /* Game.storyboard in Resources */,
+				B1522F001F78C5DD00F352F9 /* art.scnassets in Resources */,
 				B12F39B31F74ADC8003105BE /* Assets.xcassets in Resources */,
-				B15DF0BD1F78983D0050FCB0 /* Scenes.scnassets in Resources */,
-				B15DF0CB1F789C490050FCB0 /* Earth.scn in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -311,9 +296,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B15DF0CC1F789C490050FCB0 /* Earth.scn in Resources */,
 				B12F39C31F74D32C003105BE /* Assets.xcassets in Resources */,
-				B15DF0BC1F7898380050FCB0 /* Scenes.scnassets in Resources */,
+				B1522F011F78C5DE00F352F9 /* art.scnassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

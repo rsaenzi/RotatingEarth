@@ -23,6 +23,6 @@ class GameViewController: UIViewController {
       gameView.isPlaying = true
       
       // Set up the Scene
-      GameManager.config(scene: gameView.scene)
+      gameView.scene = GameManager.getScene()
     }
 }
