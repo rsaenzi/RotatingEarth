@@ -7,12 +7,22 @@
 //
 
 import UIKit
-import SpriteKit
+import SceneKit
 import GameplayKit
 
 class GameViewController: UIViewController {
 
+   @IBOutlet weak var gameView: SCNView!
+   
     override func viewDidLoad() {
         super.viewDidLoad()
+      
+      // Set up the interface
+      gameView.showsStatistics = true
+      gameView.preferredFramesPerSecond = 30
+      gameView.isPlaying = true
+      
+      // Set up the Scene
+      GameManager.config(scene: gameView.scene)
     }
 }

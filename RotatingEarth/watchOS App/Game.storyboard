@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="12120" systemVersion="16G29" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="zYS-eU-YzU">
+    <device id="watch38" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="12029"/>
+    </dependencies>
+    <scenes>
+        <!--Game Interface Controller-->
+        <scene sceneID="1T2-2L-fKX">
+            <objects>
+                <controller id="zYS-eU-YzU" customClass="GameInterfaceController" customModule="RotatingEarth_Extension">
+                    <items>
+                        <sceneKitScene alignment="left" playing="YES" scene="Earth.scn" id="Pg0-ow-rI0"/>
+                    </items>
+                    <connections>
+                        <outlet property="sceneInterface" destination="Pg0-ow-rI0" id="FCE-13-AaX"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-69" y="6"/>
+        </scene>
+    </scenes>
+</document>
